@@ -1,0 +1,31 @@
+{
+  "name": "tilybot-webservice",
+  "version": "0.3.0",
+  "description": "Webservice for handling webhooks coming from Api.Ai for the tilr Tilybot chatbot.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js | node_modules/.bin/bunyan -o short -l info",
+    "debug": "node src/index.js | node_modules/.bin/bunyan -l debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tilr",
+    "tilybot",
+    "chatbot",
+    "ai",
+    "apiai",
+    "api.ai",
+    "customer",
+    "service",
+    "onboarding"
+  ],
+  "author": "Jacky Chen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "dotenv": "^4.0.0",
+    "restify": "^5.0.1",
+    "restify-errors": "^4.3.0",
+    "restify-plugins": "^1.6.0"
+  }
+}
