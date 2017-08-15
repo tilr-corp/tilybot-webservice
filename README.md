@@ -7,6 +7,7 @@
 - [Helpers](#helpers)
 - [Messages](#messages)
 - [Authentication](#authentication)
+- [Hosting](#hosting)
 
 
 ## Filesystem Structure
@@ -111,3 +112,8 @@ Most tilr database requests will need user credentials as authentication. As suc
 	}
 
 All of this information can be obtained when the user logs in. You can then utilize the helper function `getContext` to get the `creds` context for the required information when making requests to the tilr database. Refer to the [apiary](http://docs.tilr.apiary.io/) page for documentation on each request's requirements.
+
+
+## Hosting
+
+For testing/development purposes the web service is being hosted locally, and the listening port is being exposed via public URL by `ngrok`. As such, the base URL will need to be replaced in Api.Ai's settings each time ngrok is started up again (since a new URL is generated each time).
